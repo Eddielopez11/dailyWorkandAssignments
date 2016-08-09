@@ -13,6 +13,7 @@ while not done:
     people.append({'name': name, 'color': color, 'age': age})
 
 for n in people:
-     print('Name: ' + n['name'])
-     print('Color: ' + n['color'])
-     print('Age: ' + n['age'])
+    print('  ')
+    print('Name: ' + n['name'])
+    print('Color: ' + n['color'])
+    print('Age: ' + n['age'])
