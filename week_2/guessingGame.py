@@ -16,7 +16,7 @@ while guessing:
             if(1000 <= guess >= 1):
                 invalid = False
     guesses += int(1)
-    if (guess == number):
+    if guess == number:
         print('Correct!')
         guessing = True
     elif (guess > number):

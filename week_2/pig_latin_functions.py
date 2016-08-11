@@ -24,18 +24,18 @@ assert piggify_word("I") == "Isay"
 
 def piggify_string(ps):
     pigstring = ps
-    pigstringL = pigstring.split()
+    pigstring = pigstring.split()
     vowels = ('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
-    for word in pigstringL:
+    for word in pigstring:
         if word[0] not in vowels:
             for l in word[1: ]:
-                pigstringL.append(l)
-            pigstringL.append(word[0] + 'ay')
+                pigstring.append(l)
+            pigstring.append(word[0] + 'ay')
         elif len(word) <= 1:
-            pigstringL.append(word[0] + 'say')
+            pigstring.append(word[0] + 'say')
         else:
-            pigstringL.append(word[1:] + 'say')
+            pigstring.append(word[1:] + 'say')
 
-        return ' '.join(pigstringL)
+        return ' '.join(pigstring)
 
 print(piggify_string('python pig latin is not fun a all'))
